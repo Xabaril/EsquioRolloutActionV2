@@ -1,0 +1,18 @@
+name: 'esquio-rollout-v2'
+description: 'Xabaril Esquio Rollout task (V2)'
+author: 'Xabaril'
+branding:
+  icon: 'toggle-right'  
+  color: 'blue'
+inputs:
+  esquioUrl:             
+    description: 'Esquio URL'
+  esquioApiKey:
+    description: 'Esquio API KEy (keep it secret)'
+  productName:
+    description: 'Product name'
+  featureName:
+    description: 'Feature name'
+runs:
+  using: 'node12'
+  main: 'lib/main.js'

@@ -1,6 +1,6 @@
 {
   "name": "esquio-rollout",
-  "version": "0.0.1",
+  "version": "2.0.0",
   "private": true,
   "description": "Xabaril Esquio rollout action",
   "main": "lib/main.js",

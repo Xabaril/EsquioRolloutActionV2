@@ -1,4 +1,4 @@
-name: "Test rolloout (V2) task"
+name: "Test rollout (V2) task"
 on:
   pull_request:
   push:
@@ -15,7 +15,7 @@ jobs:
       - name: esquio-rollout-v2
         uses: ./
         with:
-          esquioUrl: 'https://esquiodemoui2.azurewebsites.net/'
+          esquioUrl: 'https://esquiodemoui.azurewebsites.net/'
           esquioApiKey: ${{ secrets.apikey }}
           productName: 'Default'
           featureName: 'MatchScore'

@@ -4,10 +4,10 @@ const https = require('https');
 
 async function run() {
   try {
-    const esquioUrl = core.getInput('esquioUrl');
-    const esquioApiKey = core.getInput('esquioApiKey');
-    const productName = core.getInput('productName');
-    const featureName = core.getInput('featureName');
+    const esquioUrl ='https://esquiodemoui.azurewebsites.net/';
+  const esquioApiKey = 'NRGIjdU2D7HPy9H5JnQeR9MwBCY1ZdKDtDjiligIoGs=';
+  const productName = 'Default';
+    const featureName = 'MatchScore';
 
     await rolloutFeature(url.parse(esquioUrl), esquioApiKey, productName, featureName);
   } catch (error) {
@@ -22,7 +22,8 @@ async function rolloutFeature(esquioUrl: url.UrlWithStringQuery, esquioApiKey: s
       method: 'PUT',
       headers: {
           'Content-Type': 'application/json',
-          'x-api-key': esquioApiKey
+          'x-api-key': esquioApiKey,
+          'x-api-version': '2.0'
       }
   }
   const req = https.request(options, (res: any) => {

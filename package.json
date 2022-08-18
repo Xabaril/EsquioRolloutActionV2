@@ -20,7 +20,7 @@
   "author": "lfraile",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.0.0",
+    "@actions/core": "^1.9.1",
     "production": "0.0.2"
   },
   "devDependencies": {
